@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Poppins-200";
+  src: url("./fonts/Poppins-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-400";
+  src: url("./fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-600";
+  src: url("./fonts/Poppins-SemiBold.ttf");
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+
+main {
+  width: 80%;
+  margin: 20px auto;
+  max-width: 1100px;
+}
+
+#top-texts {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#top-texts h1 {
+  font-family: Poppins-200;
+  color: hsl(234, 12%, 34%);
+}
+
+strong {
+  font-family: Poppins-600;
+  color: hsl(234, 12%, 34%);
+}
+
+#top-texts p {
+  padding: 10px 5px;
+  font-family: Poppins-200;
+  font-size: 15px;
+  color: hsl(234, 12%, 34%);
+}
+
+#cards-container {
+  margin: 20px 0;
+}
+
+.card {
+  float: left;
+  width: 24%;
+  position: relative;
+  background-color: white;
+  height: 150px;
+  border-radius: 5px;
+  margin: 1.66%;
+  box-shadow: hsla(229, 6%, 66%, 0.219) 0px 10px 10px 5px;
+  padding: 30px 3%;
+}
+
+#team-builder {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+#supervisor {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+#calculator {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+#supervisor,
+#calculator {
+  top: 150px;
+}
+
+#karma {
+  border-top: 5px solid hsl(34, 97%, 64%);
+  margin: 1.66% 35%;
+}
+
+.card h4 {
+  font-family: Poppins-600;
+  color: hsl(234, 12%, 34%);
+  font-size: 18px;
+}
+
+.card p {
+  font-family: Poppins-200;
+  font-size: 12px;
+  color: hsl(234, 12%, 34%);
+  line-height: 1.6;
+}
+
+.card img {
+  width: 50px;
+  float: right;
+  position: relative;
+  top: 35px;
+}
+
+.close {
+  clear: both;
+}
+
+@media (max-width: 780px) {
+  .card {
+    width: 95%;
+    margin: 2.5%;
+  }
+  #karma {
+    margin: 2.5%;
+  }
+  #supervisor,
+  #calculator {
+    top: 0;
+  }
+}
+
+@media (max-width: 625px) {
+  #top-texts {
+    width: 95%;
+    margin: 2.5%;
+  }
+  #top-texts h1 {
+    font-size: 20px;
+  }
+
+  #top-texts p {
+    font-size: 13px;
+  }
+}
